@@ -11,21 +11,13 @@ class BusinessesController < ApplicationController
   end
 
   def create
-    @business = Business.new(business_params)
-
-    if @business.save
-      render json: @business, status: :created, location: @business
-    else
-      render json: @business.errors, status: :unprocessable_entity
-    end
+    @business = Business.create(business_params)
+    render json: @business
   end
 
   def update
-    if @business.update(business_params)
-      render json: @business
-    else
-      render json: @business.errors, status: :unprocessable_entity
-    end
+    @business = Business.find(params[:id])
+    @business.update(business_params)
   end
 
   def destroy
@@ -39,7 +31,7 @@ class BusinessesController < ApplicationController
   end
 
   def business_params
-    params.require(:business).permit(:name, :description, :location, :id)
+    params.permit(:name, :description, :location, :id)
   end
 
 end
