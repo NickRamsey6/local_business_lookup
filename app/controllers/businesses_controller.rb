@@ -6,6 +6,7 @@ class BusinessesController < ApplicationController
   end
 
   def show
+    @business = Business.find(params[:id])
     render json: @business
   end
 
@@ -38,7 +39,7 @@ class BusinessesController < ApplicationController
   end
 
   def business_params
-    params.require(:business).permit(:name, :description, :location)
+    params.require(:business).permit(:name, :description, :location, :id)
   end
-  
+
 end
