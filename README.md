@@ -8,7 +8,7 @@
 
 _For my sixth Ruby Code Review, I will be using Rails to build a site for a API where users can find local shops and businesses near them._
 
-##Setup/Installation Requirements -- UPDATE
+## Setup/Installation Requirements -- UPDATE
 
 * _Visit my git hub repository: <a href="https://github.com/NickRamsey6/local_business_lookup.git">GitHub Repo</a>_
 * _Click the site link_
