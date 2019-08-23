@@ -21,6 +21,7 @@ class BusinessesController < ApplicationController
   end
 
   def destroy
+    @business = Business.find(params[:id])
     @business.destroy
   end
 
