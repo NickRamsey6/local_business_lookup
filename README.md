@@ -27,6 +27,15 @@ _For my sixth Ruby Code Review, I will be using Rails to build a site for a API 
 | 404 | Not Found |
 | 500 | Internal Server Error |
 
+## Open Endpoints
+
+Open endpoints require no Authentication.
+
+* [Read (All)]: `GET /localhost:3000/businesses/`
+* [Read (One by ID)]: `GET /localhost:3000/businesses/:id`
+* [Create]: `POST /localhost:3000/businesses/`
+* [Update (by ID)]: `PUT /localhost:3000/businesses/:id`
+* [Delete (by ID)]: `DELETE /localhost:3000/businesses/:id`
 
 ## Known Bugs
 
